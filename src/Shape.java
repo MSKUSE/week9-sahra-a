@@ -1,28 +1,17 @@
-public class Shape {
+public abstract class Shape {
+     private String color="white";
 
-    private String color = "white";
+     public Shape(){
 
-    public Shape(){
+     }
 
-    }
-    public Shape(String color) {
-        this.color = color;
-    }
+     public Shape(String color){
+         this.color=color;
+     }
 
-    public String getColor() {
-        return color;
-    }
+     public abstract double perimeter();
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double area(){
-        return 0;
-    }
-    public double perimeter(){
-        return 0;
-    }
+     public abstract double area();
 
 
     @Override
